@@ -1,0 +1,390 @@
+/***********************
+my version of creating
+a site layout similiar to
+http://www.dwaiter.com/
+************************/
+
+:focus {
+  outline: none;
+}
+
+/* micro clear fix */
+.grouping:before,
+.grouping:after {
+  content: " ";
+  display: table;
+}
+.grouping:after {
+  clear: both;
+}
+img, iframe, video, object {
+  width: 100%;
+  display: block;
+}
+
+/* Relative Sections */
+
+.home-section, .about-me-section, .projects-section {
+  position: static;
+}
+
+/* Center */
+
+.center {
+  text-align: center;
+}
+
+/* Gray Body Text */
+
+.gray-body-text {
+  color: gray;
+}
+
+/* Margin: 0 auto */
+
+.margin-auto {
+  margin: 0;
+}
+
+/* Gold */
+
+.gold {
+  color: gold;
+}
+
+/* Bold */
+
+.bold {
+  font-weight: bold;
+}
+
+/* Buttons */
+
+button {
+  font-size: .8em;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-top: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gold-button {
+  background: gold;
+  color: #fff;
+}
+
+.gold-button:hover {
+  background: darkorange;
+}
+
+.clear-button {
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.clear-button:nth-of-type(1) {
+  margin-right: 10px;
+}
+
+.white-button {
+  border: 2px solid #fff;
+  color: #fff;
+  background: #000;
+}
+
+.black-button {
+  background: #000;
+  color: #fff;
+}
+
+.white-button:hover, .clear-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.black-button:hover {
+  background: gold;
+  color: #000;
+}
+
+/* Home Section */
+
+.home-section {
+  background: #000;
+  top: 85px;
+  padding: 225px 20px;
+  padding-bottom: 60px;
+}
+
+.home-content {
+  color: #fff;
+  padding-bottom: 120px;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+h3 {
+  padding-top: 25px;
+  font-size: 1.25em;
+}
+
+/* About Me Section */
+
+.about-me-section {
+  background: #fff;
+  padding: 100px 20px;
+}
+
+.about-me-content {
+  font-size: 1em;
+}
+
+hr {
+  width: 100px;
+  background: gold;
+  height: 5px;
+  border: none;
+  margin: 0 auto;
+}
+
+.about-me-content div:nth-of-type(1) {
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Projects Section */
+
+.projects-section {
+  background: #000;
+  padding: 80px 20px;
+}
+
+.projects-content-body > h2 {
+  font-size: 1.75em;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tree {
+  display: none;
+}
+
+/* Featured Works Section */
+
+.featured-works-section {
+  background: #fff;
+  padding: 100px 20px;
+}
+
+.featured-works-content > h2 {
+  font-size: 1.75em;
+}
+
+.featured-works-content > h2,
+.featured-works-content h3 {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.featured-works-content h3 {
+  font-size: 1.4em;
+}
+
+.featured-works-content h4 {
+  color: grey;
+  font-size: 1.2em;
+  padding: 20px 0;
+}
+
+.featured-works-content-row {
+  margin-top: 20px;
+}
+
+/* Goals Section */
+
+.goals-section {
+  background: #000;
+  padding: 80px 20px;
+}
+
+.goals-content > h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Twitter Section */
+
+.twitter-section {
+  background: ivory;
+  padding: 80px 10px;
+}
+
+.twitter-content > h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.twitter-content > h3 {
+  color: gray;
+}
+
+/* Contact Section */
+
+.contact-section {
+  background: gray;
+  color: #fff;
+  padding: 100px 65px;
+}
+
+.contact-content > h2 {
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.content-body {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-reason-box {
+  background: lightgray;
+  border-bottom: 5px solid gold;
+  width: 275px;
+  height: 250px;
+  margin: 40px auto;
+}
+
+.contact-reason-box > h3 {
+  padding: 90px 0 10px 0;
+}
+
+.contact-reason-box > p {
+  color: #000;
+}
+
+.phone-number {
+  padding-top: 5px;
+}
+
+/* Footer Section */
+
+.footer-section {
+  background: #000;
+  padding: 80px 20px;
+}
+
+.footer-content > h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.footer-content > p {
+  color: gray;
+}
+
+.footer-gold {
+  display: block;
+}
+
+@media screen and (min-width: 715px) {
+  .home-section {
+    padding: 270px 20px 90px 20px;
+    padding-bottom: 90px;
+  }
+  .home-content {
+    color: #fff;
+    padding-bottom: 140px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  .about-me-content, .home-content {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .about-me-content div:first-child,
+  .twitter-content > h3 {
+    font-size: 1.7em;
+  }
+  .projects-content, .goals-content {
+    margin-left: 10%;
+    margin-right: 20%;
+  }
+  .featured-works-content {
+    margin: 0 10%;
+  }
+  .featured-works-content-row h4 {
+    margin-right: 20%;
+  }
+  .projects-content > h2,
+  .goals-content > h2 {
+    font-size: 2.25em;
+  }
+  .projects-section, .goals-section {
+    padding: 100px 20px;
+  }
+  .featured-works-content > h2 {
+    font-size: 2.25em;
+  }
+  .twitter-section {
+    padding: 180px 15%;
+  }
+  .twitter-content > h2 {
+    font-size: 3.25em;
+  }
+  .twitter-gold {
+    display: block;
+  }
+  .contact-content > h2 {
+    font-size: 4em;
+  }
+  .contact-body {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .contact-reason {
+    width: 50%;
+    float: left;
+  }
+  .footer-gold {
+  display: inline;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .projects-content {
+    margin-right: 10%;
+  }
+  .tree {
+    float: right;
+    height: 200px;
+    width: auto;
+    display: block;
+    margin-left: 50px;
+  }
+  .featured-works-content-row h4 {
+    margin-right: 250px;
+  }
+  .featured-works-content-row button {
+    float: right;
+    margin-top: -125px;
+  }
+  .contact-reason {
+    width: 25%;
+  }
+}
