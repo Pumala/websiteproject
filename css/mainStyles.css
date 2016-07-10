@@ -263,13 +263,14 @@ hr {
 .contact-reason-box {
   background: lightgray;
   border-bottom: 5px solid gold;
-  width: 275px;
-  height: 250px;
+  width: 200px;
+  height: inherit;
   margin: 40px auto;
+  padding: 75px 0;
 }
 
 .contact-reason-box > h3 {
-  padding: 90px 0 10px 0;
+  padding: 0 0 10px 0;
 }
 
 .contact-reason-box > p {
